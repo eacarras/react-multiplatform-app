@@ -1,0 +1,20 @@
+.home-container {
+  display: grid;
+  grid-template-columns: 25% 1fr;
+}
+.home-container__drawer {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.home-container__drawer_user {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+  gap: 5px;
+  align-items: center;
+}
+.home-container__drawer_user > div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
