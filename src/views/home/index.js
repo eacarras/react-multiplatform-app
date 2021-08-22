@@ -3,11 +3,13 @@ import HeadsetIcon from '@material-ui/icons/Headset';
 import AccountCircleIcon from '@material-ui/icons/AccountCircle';
 
 import DrawOption from './components/drawOption';
+import CarouselOptions from './components/carouselOptions';
 
 import './home.css';
 
 const Home = () => {
   const options = ['Wearables', 'Profile', 'Help'];
+  const items = ['Red Gem', 'Blue Gem', 'Yellow Gem'];
 
   return (
     <aside className="home-container">
@@ -28,7 +30,9 @@ const Home = () => {
           })
         }
       </section>
-      <section>all the information</section>
+      <section className="--intern-padding">
+        <CarouselOptions items={items}></CarouselOptions>
+      </section>
     </aside>
   );
 }
